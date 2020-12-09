@@ -27,7 +27,7 @@ import { FileFolderBase } from './FileFolderBase';
 @Entity()
 // @Index(['email', 'phoneNumber', 'account'])
 @Index(['firstName', 'lastName'], { fulltext: true })
-@Unique(['account', 'email', 'phoneNumber'])
+// @Unique(['account', 'email', 'phoneNumber'])
 export class User extends CustomBaseEntity {
   @PrimaryGeneratedColumn('uuid')
   public id: string;
